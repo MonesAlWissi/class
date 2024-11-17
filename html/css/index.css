@@ -1,0 +1,128 @@
+#countenrGrif{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  grid-template-areas:
+   'hed hed hed hed'
+  'main main main left'
+  'main main main left'
+  'foter foter foter foter';
+}
+#hed{
+    grid-area: hed;
+    background-color: blue;
+    width: 300px;
+    text-align: center;
+    color: white;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+#left{
+    grid-area: left;
+    background-color: white;
+    margin-right: 200px;
+    width: 300px;
+    height: 200px;
+    margin-top: auto;
+    
+}
+#main{
+    grid-area: main;
+    background-color:whitesmoke;
+    margin-left: 200px;
+    width: 500px;
+    margin-bottom: 15px;
+    
+}
+#foter{
+    grid-area: foter;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+.itemMain{
+    background-color: white;
+    margin-left: 20px;
+    height: 40px;
+    margin-right: 30px;
+    margin-right: 20px;
+    margin: 18px;
+    text-align: start;
+    
+}
+#pp{
+  margin-left: 20px;
+}
+#main{
+    transition: 0.2s;
+}
+#main:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 18px #888888;
+}
+.itemMain{
+    transition: 0.2s;
+}
+.itemMain:hover{
+transform: translateY(-5px);
+}
+
+#left{
+    transition: 0.3s;
+}
+#left:hover{
+ transform: scale(1.1);
+ box-shadow: 5px 10px 18px #888888;
+}
+#mmm{
+  
+    margin: 20px;
+   
+}
+#itemMain{
+    margin-top: 20px;
+    
+}
+@media screen and (max-width:500px){
+    body{
+        background-color: orangered;
+     
+    }
+    #countenrGrif{
+        grid-template-areas:
+        'hed hed hed hed'
+        'main main main main'
+         'left left left left'
+       
+        'foter foter foter foter'
+      
+      ;
+      #hed{
+        background-color: black;
+      }
+     }
+    
+    }
+
+
+    @media screen and (max-width:1024px ) and (min-width:501px){
+        body{
+            background-color:rgb(241, 29, 93);
+         
+        }
+        #countenrGrif{
+            grid-template-areas:
+            'hed hed hed hed'
+            'main main left left'
+             
+           
+            'foter foter foter foter'
+          
+          ;
+         }
+        
+        }
+
+
