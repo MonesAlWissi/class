@@ -124,5 +124,9 @@ transform: translateY(-5px);
          }
         
         }
+        .itemMain{
+            vertical-align: middle;
+            padding: 10px;
+        }
 
-
+        
